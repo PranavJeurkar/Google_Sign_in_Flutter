@@ -11,7 +11,7 @@ class FirstScreen extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
-            colors: [Colors.blue[100], Colors.blue[400]],
+            colors: [Colors.black, Colors.black],
           ),
         ),
         child: Center(
@@ -32,7 +32,7 @@ class FirstScreen extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black54),
+                    color: Colors.black),
               ),
               Text(
                 name,
@@ -47,13 +47,13 @@ class FirstScreen extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black54),
+                    color: Colors.white),
               ),
               Text(
                 email,
                 style: TextStyle(
                     fontSize: 25,
-                    color: Colors.deepPurple,
+                    color: Colors.white,
                     fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 40),
@@ -62,7 +62,7 @@ class FirstScreen extends StatelessWidget {
                   signOutGoogle();
                   Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) {return LoginPage();}), ModalRoute.withName('/'));
                 },
-                color: Colors.deepPurple,
+                color: Colors.blueGrey,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
